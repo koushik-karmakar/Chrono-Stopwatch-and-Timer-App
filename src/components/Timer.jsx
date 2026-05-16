@@ -49,7 +49,7 @@ export default function Timer() {
 
   return (
     <div>
-      {/* Clock */}
+      
       <div className="flex flex-col items-center mb-6">
         <ProgressRing pct={pct} state={state}>
           <div
@@ -67,14 +67,13 @@ export default function Timer() {
         </div>
       </div>
 
-      {/* Done Banner */}
+   
       {done && (
         <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-3 text-center text-sm font-bold text-red-400 tracking-wide mb-5">
           ⏰ Timer complete!
         </div>
       )}
 
-      {/* Time Input — only when idle */}
       {isIdle && (
         <div className="mb-5">
           <span className="block text-[0.65rem] font-bold tracking-widest uppercase text-[#6b6880] mb-3">
@@ -114,7 +113,6 @@ export default function Timer() {
         </div>
       )}
 
-      {/* Quick Presets */}
       {isIdle && (
         <div className="flex flex-wrap gap-2 mb-6">
           {PRESETS.map(p => (
@@ -125,7 +123,6 @@ export default function Timer() {
         </div>
       )}
 
-      {/* Controls */}
       <div className="flex items-center justify-center gap-3">
         {done ? (
           <button className="btn-primary purple" style={{ padding: '14px 48px' }} onClick={reset}>↺ Reset</button>

@@ -15,7 +15,7 @@ export default function Stopwatch() {
 
   return (
     <div>
-      {/* Clock */}
+
       <div className="flex flex-col items-center mb-8">
         <ProgressRing pct={1} state={state}>
           <div
@@ -33,7 +33,7 @@ export default function Stopwatch() {
         </div>
       </div>
 
-      {/* Controls */}
+  
       <div className="flex items-center justify-center gap-3 mb-8">
         {running ? (
           <>
@@ -50,7 +50,7 @@ export default function Stopwatch() {
         )}
       </div>
 
-      {/* Laps */}
+   
       {laps.length > 0 && (
         <div className="border-t border-white/5 pt-5">
           <div className="flex items-center justify-between mb-3">
